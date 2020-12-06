@@ -93,10 +93,10 @@ class PredictView(views.APIView):
         if algorithm_status == "ab_testing":
             alg_index = 0 if rand() < 0.5 else 1
 
-        algorithm_object = registry.endpoints[12]
+        algorithm_object = registry.endpoints[algs[alg_index].id]
         prediction = algorithm_object.compute_prediction(request.data)
 
-        print(prediction)
+
         label = prediction["label"] if "label" in prediction else "error"
         ml_request = MLRequest(
             input_data=json.dumps(request.data),
