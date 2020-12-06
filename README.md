@@ -15,5 +15,7 @@
 - python manage.py migrate
 python manage.py runserver
 
+python manage.py sqlflush | python manage.py dbshell
+
 
 . venv/bin/activate # to get python virtual environment activated
