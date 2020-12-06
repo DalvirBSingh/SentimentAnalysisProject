@@ -14,8 +14,8 @@ class LogisticRegressionClassifier:
 
     def processing(self, input_data):
         # JSON to pandas DataFrame
-        print("In processing function")
-
+        
+        print(input_data)
         data = [input_data]
 
         user_data_df = pd.DataFrame(data, columns = ['text']) 
@@ -29,19 +29,14 @@ class LogisticRegressionClassifier:
         
     def compute_prediction(self, input_data):
         try:
-            print("Data Received :", input_data)
-
+            print(input_data)
             prediction = self.processing(input_data)
-            print("Prediction here")
-            print(prediction[0])
+
             if(prediction[0] == 1):
-                print("Happy returning")
                 return {"label": "Happy", "status": "OK"}
             elif(prediction[0] == 2):
-                print("Neutral returning")
                 return {"label": "Neutral", "status": "OK"}
             else:
-                print("Sad returning")
                 return {"label": "Sad", "status": "OK"}
         except Exception as e:
             return {"status": "Error", "message": str(e)}
