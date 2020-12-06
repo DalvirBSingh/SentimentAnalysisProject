@@ -13,3 +13,4 @@
 - # please run it in backend/server directory
 - python manage.py makemigrations
 - python manage.py migrate
+python manage.py runserver
