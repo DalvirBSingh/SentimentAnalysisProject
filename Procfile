@@ -1,1 +1,1 @@
-web: python backend-service/server/manage.py runserver 0.0.0.0:5000
+web: gunicorn backend-service/server/server/wsgi.py
