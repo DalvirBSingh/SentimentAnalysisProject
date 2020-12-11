@@ -76,8 +76,12 @@ class PredictView(views.APIView):
         
         algs = MLAlgorithm.objects.all()
         print(algs)
-        algorithm_object = registry.endpoints[algs[0].id]
-        print(algorithm_object)
+        print(endpoint_name)
+        print(algorithm_status)
+        print(algs[alg_index])
+        print(algs[alg_index].id)
+        alg_index = 0
+        algorithm_object = registry.endpoints[algs[alg_index].id]
         prediction = algorithm_object.compute_prediction(request.data)
 
 
