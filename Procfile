@@ -1,2 +1,2 @@
-web: gunicorn server.wsgi
+web: cd backed-service/server && gunicorn server.wsgi
 
