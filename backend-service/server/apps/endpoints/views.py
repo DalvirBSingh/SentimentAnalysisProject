@@ -76,25 +76,8 @@ class PredictView(views.APIView):
         
         algs = MLAlgorithm.objects.all()
         print(algs)
-        print(endpoint_name)
-        print(algorithm_status)
-        if algorithm_version is not None:
-            algs = algs.filter(version = algorithm_version)
-        if len(algs) == 0:
-            return Response(
-                {"status": "Error", "message": "ML algorithm is not available"},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-        if len(algs) != 1 and algorithm_status != "production":
-            return Response(
-                {"status": "Error", "message": "ML algorithm selection is ambiguous. Please specify algorithm version."},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-        alg_index = 0
-        if algorithm_status == "ab_testing":
-            alg_index = 0 if rand() < 0.5 else 1
-
-        algorithm_object = registry.endpoints[algs[alg_index].id]
+        algorithm_object = registry.endpoints[algs[0].id]
+        print(algorithm_object)
         prediction = algorithm_object.compute_prediction(request.data)
 
 
