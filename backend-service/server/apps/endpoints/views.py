@@ -82,7 +82,7 @@ class PredictView(views.APIView):
         print(algs[alg_index])
         print(algs[alg_index].id)
         print(registry.endpoints)
-        algorithm_object = registry.endpoints[0]
+        algorithm_object = next(iter(registry.endpoints))
         prediction = algorithm_object.compute_prediction(request.data)
         print("HEresjas")
 
