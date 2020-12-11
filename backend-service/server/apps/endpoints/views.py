@@ -56,8 +56,6 @@ class MLAlgorithmStatusViewSet(
                 # set active=False for other statuses
                 deactivate_other_statuses(instance)
 
-
-
         except Exception as e:
             raise APIException(str(e))
 

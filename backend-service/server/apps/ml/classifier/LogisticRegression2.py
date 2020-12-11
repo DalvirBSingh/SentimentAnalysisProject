@@ -6,9 +6,9 @@ class LogisticRegressionClassifier2:
     def __init__(self):
         path_to_artifacts = "../machine-learning/"
         #Dataset 1 predictive models
-        self.lg_model =  joblib.load("/Users/ds070111/Documents/GitHub/SentimentAnalysisProject/backend-service/server/machine-learning/lg_model2.joblib")
-        self.vectorizer = joblib.load("/Users/ds070111/Documents/GitHub/SentimentAnalysisProject/backend-service/server/machine-learning/vectorizer2.joblib")
-        self.tfidf = joblib.load("/Users/ds070111/Documents/GitHub/SentimentAnalysisProject/backend-service/server/machine-learning/tfidf2.joblib")
+        self.lg_model =  joblib.load("backend-service/server/machine-learning/lg_model2.joblib")
+        self.vectorizer = joblib.load("backend-service/server/machine-learning/vectorizer2.joblib")
+        self.tfidf = joblib.load("backend-service/server/machine-learning/tfidf2.joblib")
         
         #Dataset 2 predictive models
 

@@ -20,7 +20,7 @@ try:
                             algorithm_object=lg,
                             algorithm_name="Logistic Regression Classifier",
                             algorithm_status="production",
-                            algorithm_version="0.0.1",
+                            algorithm_version="0.23.2",
                             owner="Dalvir Singh",
                             algorithm_description="Logistic Regression Classifier trained on Consumer Reviews of Amazon Products",
                             algorithm_code=inspect.getsource(LogisticRegressionClassifier))
@@ -28,7 +28,7 @@ try:
                             algorithm_object=lg2,
                             algorithm_name="Logistic Regression Classifier",
                             algorithm_status="production",
-                            algorithm_version="0.0.1",
+                            algorithm_version="0.23.2",
                             owner="Dalvir Singh",
                             algorithm_description="Logistic Regression Classifier trained on Food Reviews on Amazon",
                             algorithm_code=inspect.getsource(LogisticRegressionClassifier2))
