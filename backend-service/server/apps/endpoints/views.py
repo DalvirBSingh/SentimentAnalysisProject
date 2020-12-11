@@ -78,9 +78,9 @@ class PredictView(views.APIView):
         print(algs)
         print(endpoint_name)
         print(algorithm_status)
+        alg_index = 0
         print(algs[alg_index])
         print(algs[alg_index].id)
-        alg_index = 0
         algorithm_object = registry.endpoints[algs[alg_index].id]
         prediction = algorithm_object.compute_prediction(request.data)
 
