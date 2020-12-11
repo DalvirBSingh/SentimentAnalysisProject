@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     # apps
     'apps.endpoints',
     'apps.ml.classifier',
-    'apps.ml'
+    'apps.ml',
+    'gunicorn'
 ]
 
 MIDDLEWARE = [

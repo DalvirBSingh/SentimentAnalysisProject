@@ -1,2 +1,2 @@
-web: python backend-service/server/manage.py runserver 0.0.0.0:3000
+web: cd backend-service/server/ && gunicorn server.wsgi --bind 0.0.0.0:8000 --workers 4 --threads 4
 
