@@ -81,9 +81,10 @@ class PredictView(views.APIView):
         alg_index = 0
         print(algs[alg_index])
         print(algs[alg_index].id)
-        algorithm_object = registry.endpoints[algs[alg_index].id]
+        print(registry.endpoints)
+        algorithm_object = registry.endpoints[0]
         prediction = algorithm_object.compute_prediction(request.data)
-
+        print("HEresjas")
 
         label = prediction["label"] if "label" in prediction else "error"
         ml_request = MLRequest(

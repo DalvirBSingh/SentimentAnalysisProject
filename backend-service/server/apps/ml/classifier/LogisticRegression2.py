@@ -15,7 +15,7 @@ class LogisticRegressionClassifier2:
 
     def processing(self, input_data):
         # JSON to pandas DataFrame
-        
+        print("Logging here")
         print(input_data)
         data = [input_data]
 
