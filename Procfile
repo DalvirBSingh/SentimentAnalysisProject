@@ -1,1 +1,1 @@
-web: python backend-service/server/manage.py runserver 
+worker: python backend-service/server/manage.py runserver 
