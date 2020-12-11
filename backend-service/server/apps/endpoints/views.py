@@ -74,7 +74,7 @@ class PredictView(views.APIView):
         algorithm_version = self.request.query_params.get("version")
         print(algorithm_version)
         
-        algs = MLAlgorithm.objects.filter(parent_endpoint__name = endpoint_name, status__status = algorithm_status, status__active=True)
+        algs = MLAlgorithm.objects
         print(algs)
         print(endpoint_name)
         print(algorithm_status)

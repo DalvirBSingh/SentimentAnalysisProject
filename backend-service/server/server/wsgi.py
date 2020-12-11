@@ -13,7 +13,7 @@ try:
     registry = MLRegistry() # create ML registry
     # Random Forest classifier
     lg2 = LogisticRegressionClassifier2()
-    # add to ML registry
+
 
     registry.add_algorithm(endpoint_name="food_review_classifier",
                             algorithm_object=lg2,
