@@ -7,9 +7,9 @@ class LogisticRegressionClassifier2:
     def __init__(self):
         path_to_artifacts = os.getcwd() 
         #Dataset 1 predictive models
-        self.lg_model_1 =  joblib.load(path_to_artifacts +"/machne-learning/lg_model2.joblib")
-        self.vectorizer_1 = joblib.load(path_to_artifacts +"/machne-learning/vectorizer2.joblib")
-        self.tfidf_1 = joblib.load(path_to_artifacts +"/machne-learning/tfidf2.joblib")
+        self.lg_model_1 =  joblib.load(path_to_artifacts +"/machine-learning/lg_model2.joblib")
+        self.vectorizer_1 = joblib.load(path_to_artifacts +"/machine-learning/vectorizer2.joblib")
+        self.tfidf_1 = joblib.load(path_to_artifacts +"/machine-learning/tfidf2.joblib")
         
         #Dataset 2 predictive models
 
