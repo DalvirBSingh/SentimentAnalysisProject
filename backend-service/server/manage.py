@@ -6,8 +6,6 @@ import sys
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'server.settings')
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
