@@ -1,2 +1,2 @@
-web: gunicorn server.wsgi --log-file -
+web: python backend-service/server/manage.py runserver 0.0.0.0:3000
 
