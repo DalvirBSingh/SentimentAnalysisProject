@@ -25,7 +25,7 @@ SECRET_KEY = '=k6x25uzm5z!l(e!k&*dcu*qh2ys3iwj_x7nd8(g#d0e-z%xr&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'https://ml-sentiment-analys.herokuapp.com/']
 
 
 # Application definition
